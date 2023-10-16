@@ -1,0 +1,7 @@
+T:\Projetos\Projects\SGE\SGE\obj\Debug\net6.0-windows\SGE.csproj.AssemblyReference.cache
+T:\Projetos\Projects\SGE\SGE\obj\Debug\net6.0-windows\SGE.frmLogin.resources
+T:\Projetos\Projects\SGE\SGE\obj\Debug\net6.0-windows\SGE.csproj.GenerateResource.cache
+T:\Projetos\Projects\SGE\SGE\obj\Debug\net6.0-windows\SGE.GeneratedMSBuildEditorConfig.editorconfig
+T:\Projetos\Projects\SGE\SGE\obj\Debug\net6.0-windows\SGE.AssemblyInfoInputs.cache
+T:\Projetos\Projects\SGE\SGE\obj\Debug\net6.0-windows\SGE.AssemblyInfo.cs
+T:\Projetos\Projects\SGE\SGE\obj\Debug\net6.0-windows\SGE.csproj.CoreCompileInputs.cache
