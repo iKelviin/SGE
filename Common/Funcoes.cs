@@ -17,21 +17,15 @@ public static class Funcoes
         //Busca a conexao criptografada no arquivo de configuracao de acordo com o banco informado
         switch (nomeBanco)
         {
-            case Banco.PROVA:
-                providerString = ConfigurationManager.ConnectionStrings["ConnectionPROVA"].ConnectionString;
-                break;
-            case Banco.Util:
-                providerString = ConfigurationManager.ConnectionStrings["ConnectionUtil"].ConnectionString;
-                break;
-            case Banco.Logistica:
-                providerString = ConfigurationManager.ConnectionStrings["ConnectionLogistica"].ConnectionString;
+            case Banco.SGE:
+                providerString = ConfigurationManager.ConnectionStrings["ConnectionSGE"].ConnectionString;
                 break;
             default:
                 break;
         }
 
 
-        providerString = Plural.Seguranca.Criptografia.Descriptografar(providerString, "!P@L@U#R$A%L&0*");
+        //providerString = Plural.Seguranca.Criptografia.Descriptografar(providerString, "!P@L@U#R$A%L&0*");
 
         return providerString;
     }

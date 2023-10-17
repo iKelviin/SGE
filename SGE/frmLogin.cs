@@ -1,3 +1,5 @@
+using Entity;
+using Facade;
 using Plural.Seguranca;
 using System.Runtime.Intrinsics.Arm;
 
@@ -5,6 +7,7 @@ namespace SGE
 {
     public partial class frmLogin : Form
     {
+        public UsuarioInfo voUsuario = new UsuarioInfo();
         public frmLogin()
         {
             InitializeComponent();
@@ -21,7 +24,6 @@ namespace SGE
 
 
             string voSenhaCripto = string.Empty;
-            int retornoUser = 0;
 
             if (string.IsNullOrEmpty(txtUsuario.Text) || string.IsNullOrEmpty(txtSenha.Text))
             {
@@ -32,10 +34,10 @@ namespace SGE
             voSenhaCripto = Criptografia.CriptografarMD5(txtSenha.Text);
 
 
-            voUsuario = UtilFacade.ValidarUsuario(int.Parse(txtUsuario.Text), voSenhaCripto);
+            voUsuario = UtilFacade.ValidarUsuario(txtUsuario.Text, voSenhaCripto);
 
 
-            if (voUsuario.Codigo == 0)
+            if (voUsuario.Id == 0)
             {
                 MessageBox.Show("USUÁRIO OU SENHA INCORRETOS.", "", MessageBoxButtons.OK, MessageBoxIcon.Hand);
                 txtSenha.Clear();
@@ -44,43 +46,29 @@ namespace SGE
             }
             else
             {
-                if (Adm)
-                {
-
-                    if (voUsuario.Administrador == 1)
-                    {
-                        frmCadUsuario otela = new frmCadUsuario(voUsuario);
-                        this.Hide();
-                        otela.ShowDialog();
-                        this.Close();
-                    }
-                    else
-                    {
-                        MessageBox.Show("USUÁRIO SEM PERMISSÃO ADMINISTRADOR.", "", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-                    }
-                }
-                else if (AbrirMenu)
-                {
-                    if (oMonitorWebService)
-                    {
-                        //Só Retorna o Usuário para o monitor WebService.
-                        Close();
-                    }
-                    else
-                    {
-                        frmMenu oMenu = new frmMenu(voUsuario);
-                        this.Hide();
-                        oMenu.ShowDialog();
-                        this.Close();
-                    }
-                }
-                else
-                {
-                    this.Close();
-                }
-
+                frmMenu oMenu = new frmMenu(voUsuario);
+                this.Hide();
+                oMenu.ShowDialog();
+                this.Close();
             }
         }
 
+        private void txtUsuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Escape)
+                this.Close();
+
+            if (e.KeyCode == Keys.Enter)
+                txtSenha.Focus();
+        }
+
+        private void txtSenha_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Escape)
+                this.Close();
+
+            if (e.KeyCode == Keys.Enter)
+                Logar();
+        }
     }
 }

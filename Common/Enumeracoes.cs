@@ -4,12 +4,7 @@ public class Enumeracoes
 {
     public enum Banco
     {
-        PROVA = 1,
-        Automation = 2,
-        Logistica = 3,
-        PCP = 4,
-        SISDV = 5,
-        Util = 6
+        SGE = 1
     }
 
     public enum ForcaDaSenha
