@@ -70,5 +70,10 @@ namespace SGE
             if (e.KeyCode == Keys.Enter)
                 Logar();
         }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            txtUsuario.Select();
+        }
     }
 }

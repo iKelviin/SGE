@@ -25,6 +25,7 @@ namespace SGE
         {
             txtNome.Text = voUsuario.Nome;
             txtUsuario.Text = voUsuario.Usuario;
+            lblBemVindo.Text = voUsuario.Usuario;
             txtEmail.Text = voUsuario.Email;
             picGreen.Visible = true;
             picRed.Visible = false;

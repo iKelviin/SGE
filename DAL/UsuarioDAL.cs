@@ -97,7 +97,10 @@ public class UsuarioDAL : BaseDAL<UsuarioInfo>
             if (dt.Rows.Count > 0)
             {
                 objUsuario = PegaItem<UsuarioInfo>(dt.Rows[0]);
-            }
+            }                                                                                           
+
+
+
 
             return objUsuario;
         }

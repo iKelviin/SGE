@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            panel1 = new Panel();
-            label4 = new Label();
             gbDados = new GroupBox();
             btnNovo = new Button();
             btnSalvar = new Button();
@@ -65,37 +63,23 @@
             groupBox1 = new GroupBox();
             label14 = new Label();
             dgvClientes = new DataGridView();
-            txtBuscar = new TextBox();
             MenuGrid = new ContextMenuStrip(components);
             excluirClienteToolStripMenuItem = new ToolStripMenuItem();
+            txtBuscar = new TextBox();
+            panel1 = new Panel();
+            label4 = new Label();
+            panel4 = new Panel();
             gbDados.SuspendLayout();
             gbEndereco.SuspendLayout();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvClientes).BeginInit();
             MenuGrid.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(0, 31, 70);
-            panel1.Location = new Point(-11, 51);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1178, 13);
-            panel1.TabIndex = 0;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.FromArgb(0, 31, 70);
-            label4.Location = new Point(184, 5);
-            label4.Name = "label4";
-            label4.Size = new Size(386, 40);
-            label4.TabIndex = 10;
-            label4.Text = "Gerenciamento de Clientes";
             // 
             // gbDados
             // 
+            gbDados.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             gbDados.Controls.Add(btnNovo);
             gbDados.Controls.Add(btnSalvar);
             gbDados.Controls.Add(txtCPF);
@@ -110,9 +94,9 @@
             gbDados.Controls.Add(label1);
             gbDados.Controls.Add(lblNome);
             gbDados.Controls.Add(txtNome);
-            gbDados.Location = new Point(12, 70);
+            gbDados.Location = new Point(12, 77);
             gbDados.Name = "gbDados";
-            gbDados.Size = new Size(362, 226);
+            gbDados.Size = new Size(357, 226);
             gbDados.TabIndex = 11;
             gbDados.TabStop = false;
             gbDados.Text = "Dados Pessoais";
@@ -138,7 +122,7 @@
             btnSalvar.Location = new Point(217, 166);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(95, 38);
-            btnSalvar.TabIndex = 30;
+            btnSalvar.TabIndex = 10;
             btnSalvar.Text = "Salvar";
             btnSalvar.UseVisualStyleBackColor = false;
             btnSalvar.Click += btnSalvar_Click;
@@ -149,7 +133,7 @@
             txtCPF.Mask = "###,###,###-##";
             txtCPF.Name = "txtCPF";
             txtCPF.Size = new Size(95, 23);
-            txtCPF.TabIndex = 14;
+            txtCPF.TabIndex = 6;
             // 
             // label5
             // 
@@ -166,10 +150,10 @@
             // txtRG
             // 
             txtRG.Location = new Point(253, 96);
-            txtRG.Mask = "##,###,###-##";
+            txtRG.Mask = "##,###,###-#";
             txtRG.Name = "txtRG";
             txtRG.Size = new Size(95, 23);
-            txtRG.TabIndex = 12;
+            txtRG.TabIndex = 5;
             // 
             // label6
             // 
@@ -186,10 +170,10 @@
             // txtCelular
             // 
             txtCelular.Location = new Point(69, 125);
-            txtCelular.Mask = "(99) 0000-0000";
+            txtCelular.Mask = "(99) 00000-0000";
             txtCelular.Name = "txtCelular";
-            txtCelular.Size = new Size(85, 23);
-            txtCelular.TabIndex = 10;
+            txtCelular.Size = new Size(94, 23);
+            txtCelular.TabIndex = 4;
             // 
             // label3
             // 
@@ -208,8 +192,8 @@
             txtTelefone.Location = new Point(69, 96);
             txtTelefone.Mask = "(99) 0000-0000";
             txtTelefone.Name = "txtTelefone";
-            txtTelefone.Size = new Size(85, 23);
-            txtTelefone.TabIndex = 8;
+            txtTelefone.Size = new Size(94, 23);
+            txtTelefone.TabIndex = 3;
             // 
             // label2
             // 
@@ -228,7 +212,7 @@
             txtEmail.Location = new Point(69, 67);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(279, 23);
-            txtEmail.TabIndex = 6;
+            txtEmail.TabIndex = 2;
             // 
             // label1
             // 
@@ -263,6 +247,7 @@
             // 
             // gbEndereco
             // 
+            gbEndereco.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             gbEndereco.Controls.Add(btnBuscar);
             gbEndereco.Controls.Add(cboUF);
             gbEndereco.Controls.Add(label13);
@@ -278,9 +263,9 @@
             gbEndereco.Controls.Add(txtEndereco);
             gbEndereco.Controls.Add(txtCEP);
             gbEndereco.Controls.Add(label7);
-            gbEndereco.Location = new Point(380, 70);
+            gbEndereco.Location = new Point(387, 77);
             gbEndereco.Name = "gbEndereco";
-            gbEndereco.Size = new Size(365, 226);
+            gbEndereco.Size = new Size(358, 226);
             gbEndereco.TabIndex = 12;
             gbEndereco.TabStop = false;
             gbEndereco.Text = "Endereço";
@@ -304,7 +289,7 @@
             cboUF.Location = new Point(270, 152);
             cboUF.Name = "cboUF";
             cboUF.Size = new Size(61, 23);
-            cboUF.TabIndex = 28;
+            cboUF.TabIndex = 13;
             // 
             // label13
             // 
@@ -323,7 +308,7 @@
             txtCidade.Location = new Point(96, 186);
             txtCidade.Name = "txtCidade";
             txtCidade.Size = new Size(117, 23);
-            txtCidade.TabIndex = 26;
+            txtCidade.TabIndex = 12;
             // 
             // label12
             // 
@@ -342,7 +327,7 @@
             txtNumero.Location = new Point(96, 157);
             txtNumero.Name = "txtNumero";
             txtNumero.Size = new Size(117, 23);
-            txtNumero.TabIndex = 24;
+            txtNumero.TabIndex = 9;
             txtNumero.KeyPress += txtNumero_KeyPress;
             // 
             // label11
@@ -362,7 +347,7 @@
             txtBairro.Location = new Point(96, 126);
             txtBairro.Name = "txtBairro";
             txtBairro.Size = new Size(117, 23);
-            txtBairro.TabIndex = 22;
+            txtBairro.TabIndex = 10;
             // 
             // label10
             // 
@@ -381,7 +366,7 @@
             txtComplemento.Location = new Point(96, 96);
             txtComplemento.Name = "txtComplemento";
             txtComplemento.Size = new Size(117, 23);
-            txtComplemento.TabIndex = 20;
+            txtComplemento.TabIndex = 8;
             // 
             // label8
             // 
@@ -412,7 +397,7 @@
             txtEndereco.Location = new Point(96, 68);
             txtEndereco.Name = "txtEndereco";
             txtEndereco.Size = new Size(235, 23);
-            txtEndereco.TabIndex = 17;
+            txtEndereco.TabIndex = 8;
             // 
             // txtCEP
             // 
@@ -420,7 +405,8 @@
             txtCEP.Mask = "#####-###";
             txtCEP.Name = "txtCEP";
             txtCEP.Size = new Size(95, 23);
-            txtCEP.TabIndex = 16;
+            txtCEP.TabIndex = 7;
+            txtCEP.KeyDown += txtCEP_KeyDown;
             // 
             // label7
             // 
@@ -436,19 +422,20 @@
             // 
             // groupBox1
             // 
+            groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             groupBox1.Controls.Add(label14);
             groupBox1.Controls.Add(dgvClientes);
             groupBox1.Controls.Add(txtBuscar);
-            groupBox1.Location = new Point(12, 302);
+            groupBox1.Location = new Point(12, 309);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(733, 329);
+            groupBox1.Size = new Size(733, 322);
             groupBox1.TabIndex = 13;
             groupBox1.TabStop = false;
             groupBox1.Text = "Consultar";
             // 
             // label14
             // 
-            label14.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label14.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label14.AutoSize = true;
             label14.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label14.ForeColor = Color.FromArgb(0, 31, 70);
@@ -462,7 +449,9 @@
             // 
             dgvClientes.AllowUserToAddRows = false;
             dgvClientes.AllowUserToDeleteRows = false;
+            dgvClientes.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvClientes.ContextMenuStrip = MenuGrid;
             dgvClientes.Location = new Point(8, 52);
             dgvClientes.MultiSelect = false;
             dgvClientes.Name = "dgvClientes";
@@ -470,18 +459,9 @@
             dgvClientes.RowHeadersVisible = false;
             dgvClientes.RowTemplate.Height = 25;
             dgvClientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvClientes.Size = new Size(719, 268);
+            dgvClientes.Size = new Size(719, 261);
             dgvClientes.TabIndex = 0;
             dgvClientes.CellClick += dgvClientes_CellClick;
-            // 
-            // txtBuscar
-            // 
-            txtBuscar.Location = new Point(222, 19);
-            txtBuscar.Name = "txtBuscar";
-            txtBuscar.Size = new Size(279, 23);
-            txtBuscar.TabIndex = 32;
-            txtBuscar.KeyDown += txtBuscar_KeyDown;
-            txtBuscar.KeyPress += txtBuscar_KeyPress;
             // 
             // MenuGrid
             // 
@@ -494,6 +474,47 @@
             excluirClienteToolStripMenuItem.Name = "excluirClienteToolStripMenuItem";
             excluirClienteToolStripMenuItem.Size = new Size(149, 22);
             excluirClienteToolStripMenuItem.Text = "Excluir Cliente";
+            excluirClienteToolStripMenuItem.Click += excluirClienteToolStripMenuItem_Click;
+            // 
+            // txtBuscar
+            // 
+            txtBuscar.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtBuscar.Location = new Point(222, 19);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.Size = new Size(250, 23);
+            txtBuscar.TabIndex = 32;
+            txtBuscar.KeyPress += txtBuscar_KeyPress;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(panel4);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(757, 71);
+            panel1.TabIndex = 16;
+            // 
+            // label4
+            // 
+            label4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.FromArgb(0, 31, 70);
+            label4.Location = new Point(192, 9);
+            label4.Name = "label4";
+            label4.Size = new Size(386, 40);
+            label4.TabIndex = 12;
+            label4.Text = "Gerenciamento de Clientes";
+            // 
+            // panel4
+            // 
+            panel4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel4.BackColor = Color.FromArgb(0, 31, 70);
+            panel4.Location = new Point(-211, 52);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(1718, 13);
+            panel4.TabIndex = 11;
             // 
             // frmClientes
             // 
@@ -501,12 +522,15 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(757, 634);
             Controls.Add(groupBox1);
-            Controls.Add(gbEndereco);
             Controls.Add(gbDados);
-            Controls.Add(label4);
+            Controls.Add(gbEndereco);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "frmClientes";
-            Text = "frmClientes";
+            ShowIcon = false;
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Gerenciamento de Clientes";
             Load += frmClientes_Load;
             gbDados.ResumeLayout(false);
             gbDados.PerformLayout();
@@ -516,14 +540,12 @@
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvClientes).EndInit();
             MenuGrid.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Panel panel1;
-        private Label label4;
         private GroupBox gbDados;
         private TextBox txtNome;
         private GroupBox gbEndereco;
@@ -561,5 +583,8 @@
         private TextBox txtBuscar;
         private ContextMenuStrip MenuGrid;
         private ToolStripMenuItem excluirClienteToolStripMenuItem;
+        private Panel panel1;
+        private Label label4;
+        private Panel panel4;
     }
 }

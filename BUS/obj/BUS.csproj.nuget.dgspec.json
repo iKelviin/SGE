@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\BUS\\BUS.csproj": {}
+    "T:\\Projetos\\Projects\\SGE\\BUS\\BUS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\BUS\\BUS.csproj": {
+    "T:\\Projetos\\Projects\\SGE\\BUS\\BUS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\BUS\\BUS.csproj",
+        "projectUniqueName": "T:\\Projetos\\Projects\\SGE\\BUS\\BUS.csproj",
         "projectName": "BUS",
-        "projectPath": "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\BUS\\BUS.csproj",
-        "packagesPath": "C:\\Users\\kelvin.rocha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\BUS\\obj\\",
+        "projectPath": "T:\\Projetos\\Projects\\SGE\\BUS\\BUS.csproj",
+        "packagesPath": "C:\\Users\\Kelvin\\.nuget\\packages\\",
+        "outputPath": "T:\\Projetos\\Projects\\SGE\\BUS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kelvin.rocha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kelvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,14 +32,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\Common\\Common.csproj"
+              "T:\\Projetos\\Projects\\SGE\\Common\\Common.csproj": {
+                "projectPath": "T:\\Projetos\\Projects\\SGE\\Common\\Common.csproj"
               },
-              "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\DAL\\DAL.csproj"
+              "T:\\Projetos\\Projects\\SGE\\DAL\\DAL.csproj": {
+                "projectPath": "T:\\Projetos\\Projects\\SGE\\DAL\\DAL.csproj"
               },
-              "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\Entity\\Entity.csproj"
+              "T:\\Projetos\\Projects\\SGE\\Entity\\Entity.csproj": {
+                "projectPath": "T:\\Projetos\\Projects\\SGE\\Entity\\Entity.csproj"
               }
             }
           }
@@ -68,24 +69,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\Common\\Common.csproj": {
+    "T:\\Projetos\\Projects\\SGE\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\Common\\Common.csproj",
+        "projectUniqueName": "T:\\Projetos\\Projects\\SGE\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\kelvin.rocha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kelvin.rocha\\Source\\Repos\\iKelviin\\SGE\\Common\\obj\\",
+        "projectPath": "T:\\Projetos\\Projects\\SGE\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\Kelvin\\.nuget\\packages\\",
+        "outputPath": "T:\\Projetos\\Projects\\SGE\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kelvin.rocha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kelvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -132,24 +134,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\DAL\\DAL.csproj": {
+    "T:\\Projetos\\Projects\\SGE\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\DAL\\DAL.csproj",
+        "projectUniqueName": "T:\\Projetos\\Projects\\SGE\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\kelvin.rocha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\DAL\\obj\\",
+        "projectPath": "T:\\Projetos\\Projects\\SGE\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\Kelvin\\.nuget\\packages\\",
+        "outputPath": "T:\\Projetos\\Projects\\SGE\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kelvin.rocha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kelvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -163,11 +166,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\Common\\Common.csproj"
+              "T:\\Projetos\\Projects\\SGE\\Common\\Common.csproj": {
+                "projectPath": "T:\\Projetos\\Projects\\SGE\\Common\\Common.csproj"
               },
-              "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\Entity\\Entity.csproj"
+              "T:\\Projetos\\Projects\\SGE\\Entity\\Entity.csproj": {
+                "projectPath": "T:\\Projetos\\Projects\\SGE\\Entity\\Entity.csproj"
               }
             }
           }
@@ -182,10 +185,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Extended.Wpf.Toolkit": {
-              "target": "Package",
-              "version": "[4.5.1, )"
-            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.5, )"
@@ -211,24 +210,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\Entity\\Entity.csproj": {
+    "T:\\Projetos\\Projects\\SGE\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\Entity\\Entity.csproj",
+        "projectUniqueName": "T:\\Projetos\\Projects\\SGE\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\Entity\\Entity.csproj",
-        "packagesPath": "C:\\Users\\kelvin.rocha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kelvin.rocha\\source\\repos\\iKelviin\\SGE\\Entity\\obj\\",
+        "projectPath": "T:\\Projetos\\Projects\\SGE\\Entity\\Entity.csproj",
+        "packagesPath": "C:\\Users\\Kelvin\\.nuget\\packages\\",
+        "outputPath": "T:\\Projetos\\Projects\\SGE\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kelvin.rocha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kelvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -269,7 +269,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

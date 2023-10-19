@@ -93,9 +93,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.user;
-            pictureBox2.Location = new Point(6, 35);
+            pictureBox2.Location = new Point(19, 35);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(37, 40);
+            pictureBox2.Size = new Size(28, 33);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 4;
             pictureBox2.TabStop = false;
@@ -103,9 +103,9 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.locker;
-            pictureBox3.Location = new Point(6, 91);
+            pictureBox3.Location = new Point(19, 98);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(37, 40);
+            pictureBox3.Size = new Size(28, 33);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 5;
             pictureBox3.TabStop = false;
@@ -168,8 +168,10 @@
             Controls.Add(groupBox1);
             Controls.Add(pictureBox1);
             Name = "frmLogin";
+            ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
+            Load += frmLogin_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
