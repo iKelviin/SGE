@@ -49,7 +49,7 @@
             btnEntrar.BackColor = Color.FromArgb(0, 31, 70);
             btnEntrar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnEntrar.ForeColor = Color.White;
-            btnEntrar.Location = new Point(68, 148);
+            btnEntrar.Location = new Point(68, 142);
             btnEntrar.Name = "btnEntrar";
             btnEntrar.Size = new Size(133, 37);
             btnEntrar.TabIndex = 0;

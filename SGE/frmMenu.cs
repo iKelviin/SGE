@@ -1,4 +1,5 @@
 ﻿using Entity;
+using SGE.Clientes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,6 +30,10 @@ namespace SGE
             picRed.Visible = false;
         }
 
-
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmClientes frm = new frmClientes();
+            frm.Show();
+        }
     }
 }

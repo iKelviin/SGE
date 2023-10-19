@@ -38,17 +38,21 @@
             lblUsuario = new Label();
             picRed = new PictureBox();
             menuStrip1 = new MenuStrip();
-            configuraçõesToolStripMenuItem = new ToolStripMenuItem();
             clientesToolStripMenuItem = new ToolStripMenuItem();
-            produtosToolStripMenuItem = new ToolStripMenuItem();
-            clientesToolStripMenuItem1 = new ToolStripMenuItem();
+            funcionáriosToolStripMenuItem = new ToolStripMenuItem();
             fornecedoresToolStripMenuItem = new ToolStripMenuItem();
-            estoqueToolStripMenuItem = new ToolStripMenuItem();
-            relatóriosToolStripMenuItem = new ToolStripMenuItem();
+            produtosToolStripMenuItem = new ToolStripMenuItem();
+            vendasToolStripMenuItem = new ToolStripMenuItem();
+            configuraçõesToolStripMenuItem = new ToolStripMenuItem();
+            panel2 = new Panel();
+            label1 = new Label();
+            label4 = new Label();
+            panel3 = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picGreen).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picRed).BeginInit();
             menuStrip1.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -62,9 +66,9 @@
             panel1.Controls.Add(lblUsuario);
             panel1.Controls.Add(picRed);
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 414);
+            panel1.Location = new Point(156, 519);
             panel1.Name = "panel1";
-            panel1.Size = new Size(800, 36);
+            panel1.Size = new Size(860, 36);
             panel1.TabIndex = 0;
             // 
             // picGreen
@@ -83,7 +87,7 @@
             txtEmail.AutoSize = true;
             txtEmail.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             txtEmail.ForeColor = Color.FromArgb(0, 31, 70);
-            txtEmail.Location = new Point(609, 9);
+            txtEmail.Location = new Point(674, 9);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(22, 15);
             txtEmail.TabIndex = 6;
@@ -95,7 +99,7 @@
             lblEmail.AutoSize = true;
             lblEmail.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             lblEmail.ForeColor = Color.FromArgb(0, 31, 70);
-            lblEmail.Location = new Point(572, 9);
+            lblEmail.Location = new Point(637, 9);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(39, 15);
             lblEmail.TabIndex = 5;
@@ -159,64 +163,122 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { configuraçõesToolStripMenuItem, clientesToolStripMenuItem, produtosToolStripMenuItem, clientesToolStripMenuItem1, fornecedoresToolStripMenuItem, estoqueToolStripMenuItem, relatóriosToolStripMenuItem });
+            menuStrip1.Dock = DockStyle.Left;
+            menuStrip1.ImageScalingSize = new Size(25, 25);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { clientesToolStripMenuItem, funcionáriosToolStripMenuItem, fornecedoresToolStripMenuItem, produtosToolStripMenuItem, vendasToolStripMenuItem, configuraçõesToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Size = new Size(156, 555);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
-            // configuraçõesToolStripMenuItem
-            // 
-            configuraçõesToolStripMenuItem.Name = "configuraçõesToolStripMenuItem";
-            configuraçõesToolStripMenuItem.Size = new Size(96, 20);
-            configuraçõesToolStripMenuItem.Text = "Configurações";
-            // 
             // clientesToolStripMenuItem
             // 
+            clientesToolStripMenuItem.AutoSize = false;
+            clientesToolStripMenuItem.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            clientesToolStripMenuItem.Image = Properties.Resources.team;
             clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            clientesToolStripMenuItem.Size = new Size(12, 20);
+            clientesToolStripMenuItem.Size = new Size(150, 85);
+            clientesToolStripMenuItem.Text = "Clientes";
+            clientesToolStripMenuItem.Click += clientesToolStripMenuItem_Click;
             // 
-            // produtosToolStripMenuItem
+            // funcionáriosToolStripMenuItem
             // 
-            produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            produtosToolStripMenuItem.Size = new Size(67, 20);
-            produtosToolStripMenuItem.Text = "Produtos";
-            // 
-            // clientesToolStripMenuItem1
-            // 
-            clientesToolStripMenuItem1.Name = "clientesToolStripMenuItem1";
-            clientesToolStripMenuItem1.Size = new Size(61, 20);
-            clientesToolStripMenuItem1.Text = "Clientes";
+            funcionáriosToolStripMenuItem.AutoSize = false;
+            funcionáriosToolStripMenuItem.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            funcionáriosToolStripMenuItem.Image = Properties.Resources.customer_service;
+            funcionáriosToolStripMenuItem.Name = "funcionáriosToolStripMenuItem";
+            funcionáriosToolStripMenuItem.Size = new Size(150, 85);
+            funcionáriosToolStripMenuItem.Text = "Funcionários";
             // 
             // fornecedoresToolStripMenuItem
             // 
+            fornecedoresToolStripMenuItem.AutoSize = false;
+            fornecedoresToolStripMenuItem.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            fornecedoresToolStripMenuItem.Image = Properties.Resources.truck;
             fornecedoresToolStripMenuItem.Name = "fornecedoresToolStripMenuItem";
-            fornecedoresToolStripMenuItem.Size = new Size(90, 20);
+            fornecedoresToolStripMenuItem.Size = new Size(150, 85);
             fornecedoresToolStripMenuItem.Text = "Fornecedores";
             // 
-            // estoqueToolStripMenuItem
+            // produtosToolStripMenuItem
             // 
-            estoqueToolStripMenuItem.Name = "estoqueToolStripMenuItem";
-            estoqueToolStripMenuItem.Size = new Size(61, 20);
-            estoqueToolStripMenuItem.Text = "Estoque";
+            produtosToolStripMenuItem.AutoSize = false;
+            produtosToolStripMenuItem.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            produtosToolStripMenuItem.Image = Properties.Resources.brand_identity;
+            produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
+            produtosToolStripMenuItem.Size = new Size(150, 85);
+            produtosToolStripMenuItem.Text = "Produtos";
             // 
-            // relatóriosToolStripMenuItem
+            // vendasToolStripMenuItem
             // 
-            relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
-            relatóriosToolStripMenuItem.Size = new Size(71, 20);
-            relatóriosToolStripMenuItem.Text = "Relatórios";
+            vendasToolStripMenuItem.AutoSize = false;
+            vendasToolStripMenuItem.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            vendasToolStripMenuItem.Image = Properties.Resources.money;
+            vendasToolStripMenuItem.Name = "vendasToolStripMenuItem";
+            vendasToolStripMenuItem.Size = new Size(150, 85);
+            vendasToolStripMenuItem.Text = "Vendas";
+            // 
+            // configuraçõesToolStripMenuItem
+            // 
+            configuraçõesToolStripMenuItem.AutoSize = false;
+            configuraçõesToolStripMenuItem.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            configuraçõesToolStripMenuItem.Image = Properties.Resources.configuration;
+            configuraçõesToolStripMenuItem.Name = "configuraçõesToolStripMenuItem";
+            configuraçõesToolStripMenuItem.Size = new Size(150, 85);
+            configuraçõesToolStripMenuItem.Text = "Configurações";
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.WhiteSmoke;
+            panel2.Controls.Add(label1);
+            panel2.Controls.Add(label4);
+            panel2.Controls.Add(panel3);
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new Point(156, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(860, 519);
+            panel2.TabIndex = 3;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 48F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(0, 31, 70);
+            label1.Location = new Point(237, 253);
+            label1.Name = "label1";
+            label1.Size = new Size(387, 86);
+            label1.TabIndex = 11;
+            label1.Text = "Empresarial";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 48F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.FromArgb(0, 31, 70);
+            label4.Location = new Point(56, 167);
+            label4.Name = "label4";
+            label4.Size = new Size(768, 86);
+            label4.TabIndex = 10;
+            label4.Text = "SGE - Sistema de Gestão";
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(0, 31, 70);
+            panel3.Location = new Point(-3, -8);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(13, 566);
+            panel3.TabIndex = 0;
             // 
             // frmMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1016, 555);
+            Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(menuStrip1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            MainMenuStrip = menuStrip1;
             Name = "frmMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Sistema de Gestão Empresarial";
@@ -227,6 +289,8 @@
             ((System.ComponentModel.ISupportInitialize)picRed).EndInit();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -241,15 +305,18 @@
         private PictureBox picRed;
         private Label txtEmail;
         private Label lblEmail;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem configuraçõesToolStripMenuItem;
-        private ToolStripMenuItem clientesToolStripMenuItem;
-        private ToolStripMenuItem produtosToolStripMenuItem;
-        private ToolStripMenuItem clientesToolStripMenuItem1;
-        private ToolStripMenuItem fornecedoresToolStripMenuItem;
-        private ToolStripMenuItem estoqueToolStripMenuItem;
-        private ToolStripMenuItem relatóriosToolStripMenuItem;
         private PictureBox picGreen;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem clientesToolStripMenuItem;
+        private ToolStripMenuItem funcionáriosToolStripMenuItem;
+        private ToolStripMenuItem fornecedoresToolStripMenuItem;
+        private ToolStripMenuItem produtosToolStripMenuItem;
+        private ToolStripMenuItem vendasToolStripMenuItem;
+        private ToolStripMenuItem configuraçõesToolStripMenuItem;
+        private Panel panel2;
+        private Panel panel3;
+        private Label label4;
+        private Label label1;
 
         public ToolStripItemClickedEventHandler Menus_ItemClicked { get; private set; }
     }

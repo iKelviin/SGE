@@ -6,7 +6,7 @@ namespace BUS;
 
 public class UtilBUS
 {
-    public UsuarioInfo ValidarUsuario(string usuario, string senha)
+    public static UsuarioInfo ValidarUsuario(string usuario, string senha)
     {
         UsuarioDAL dalUsuario = new UsuarioDAL(Banco.SGE);
         return dalUsuario.Validar(usuario, senha);

@@ -1,5 +1,5 @@
+using BUS;
 using Entity;
-using Facade;
 using Plural.Seguranca;
 using System.Runtime.Intrinsics.Arm;
 
@@ -34,7 +34,7 @@ namespace SGE
             voSenhaCripto = Criptografia.CriptografarMD5(txtSenha.Text);
 
 
-            voUsuario = UtilFacade.ValidarUsuario(txtUsuario.Text, voSenhaCripto);
+            voUsuario = UtilBUS.ValidarUsuario(txtUsuario.Text, voSenhaCripto);
 
 
             if (voUsuario.Id == 0)

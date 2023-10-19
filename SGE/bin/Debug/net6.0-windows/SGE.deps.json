@@ -8,9 +8,9 @@
     ".NETCoreApp,Version=v6.0": {
       "SGE/1.0.0": {
         "dependencies": {
+          "BUS": "1.0.0",
           "Common": "1.0.0",
           "Entity": "1.0.0",
-          "Facade": "1.0.0",
           "Microsoft.SqlServer.Types": "160.1000.6",
           "System.Data.SqlClient": "4.8.5",
           "Plural.Componentes": "1.2.0.0",
@@ -331,16 +331,6 @@
           "Entity.dll": {}
         }
       },
-      "Facade/1.0.0": {
-        "dependencies": {
-          "BUS": "1.0.0",
-          "Common": "1.0.0",
-          "Entity": "1.0.0"
-        },
-        "runtime": {
-          "Facade.dll": {}
-        }
-      },
       "Plural.Componentes/1.2.0.0": {
         "runtime": {
           "Plural.Componentes.dll": {
@@ -549,11 +539,6 @@
       "sha512": ""
     },
     "Entity/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Facade/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
